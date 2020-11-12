@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sparks Website</title>
+<style>
+  #hero h2 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h2:nth-child(1) {
+    animation-delay: 1s;
+}
+#hero h2:nth-child(2) {
+    animation-delay: 2s;
+}
+#hero h2:nth-child(3) {
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3s;
+}
+#hero h2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .5s;
+}
+#hero h2:nth-child(1) span {
+    animation-delay: .5s;
+}
+#hero h2:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+#hero h2:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+
+          <a href="#hero"><h1><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="25" height="25"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M50.16667,86v28.66667l10.75,7.16667l3.58333,14.33333l3.58333,28.66667h28.66667l3.58333,-28.66667l3.58333,-14.33333l10.75,-7.16667v-28.66667c0,-14.33333 -10.75,-32.25 -32.25,-32.25c-21.5,0 -32.25,17.91667 -32.25,32.25M82.41667,50.16667c-11.85725,0 -21.5,-9.64633 -21.5,-21.5c0,-11.85367 9.64275,-21.5 21.5,-21.5c11.85725,0 21.5,9.64633 21.5,21.5c0,11.85367 -9.64275,21.5 -21.5,21.5" fill="#ffb74d"></path><path d="M78.83333,129h7.16667v35.83333h-7.16667z" fill="#ffa726"></path><path d="M114.66667,86c0,-14.33333 -10.75,-32.25 -32.25,-32.25c-21.5,0 -32.25,17.91667 -32.25,32.25h12.65275l-9.06942,43c0,0 7.16667,7.16667 28.66667,7.16667c21.5,0 28.66667,-7.16667 28.66667,-7.16667l-8.84725,-43z" fill="#f50057"></path><g fill="#795548"><path d="M102.6625,21.5c-2.96342,-8.33483 -10.90767,-14.33333 -20.24583,-14.33333c-9.33817,0 -17.28242,5.9985 -20.24583,14.33333z"></path><path d="M64.5,17.91667c-7.16667,0 -21.5,4.257 -21.5,25.08333h14.33333c0,0 0.44792,-21.5 7.16667,-21.5zM100.70958,17.91667c7.16667,0 21.5,4.257 21.5,25.08333h-14.33333c0,0 -0.44792,-21.5 -7.16667,-21.5z"></path></g></g></g></svg><span>G</span>irl <span>C</span>hild</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="index.html"  data-after="Home"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="26" height="26"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M132.30769,13.4375c-3.64363,0 -6.61538,2.97176 -6.61538,6.61538v31.62981l-34.9375,-34.9375c-2.58413,-2.58413 -6.92548,-2.58413 -9.50962,0l-77.52404,77.73077c-2.58413,2.58413 -2.58413,6.71875 0,9.30288c2.58413,2.58413 6.71875,2.58413 9.30288,0l72.97596,-72.97596l73.18269,73.18269c1.29207,1.29207 3.04928,2.06731 4.75481,2.06731c1.70553,0 3.25601,-0.77524 4.54808,-2.06731c2.58413,-2.58413 2.58413,-6.71875 0,-9.30288l-22.94712,-22.94712v-51.68269c0,-3.64363 -2.97176,-6.61538 -6.61538,-6.61538zM86,43l-72.76923,72.76923v36.38462c0,10.95673 8.88942,19.84615 19.84615,19.84615h105.84615c10.95673,0 19.84615,-8.88942 19.84615,-19.84615v-36.38462zM72.76923,105.84615h26.46154c3.64363,0 6.61538,2.97176 6.61538,6.61538v39.69231c0,3.64363 -2.97176,6.61538 -6.61538,6.61538h-26.46154c-3.64363,0 -6.61538,-2.97176 -6.61538,-6.61538v-39.69231c0,-3.64363 2.97176,-6.61538 6.61538,-6.61538z"></path></g></g></svg>Home</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  <section id="hero">
+    <div class="hero container">
+      <div><h2>WHEN YOU DONATE,YOU WILL HELP TO: <span></span></h2>
+        <br>
+        <br>
+       <h2> 
+          Enroll girls back in school.</h2>
+          <h2>Encourage families to send girl.</h2>
+          <h2>Ensure Meal Facilities.
+        </h2>
+        <br>
+        <br>
+        <br>
+         <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G0K0iePJa6LY7R"> </script> </form>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+   
+      
+    
+  
